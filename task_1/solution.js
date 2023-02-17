@@ -19,7 +19,7 @@ function addInCartMessage(title, price) {
     message = message + " ";
     message = message + productPrice;
     message = message + " ";
-    message = message + "теперь в корзине";
+    message = message + "теперь в корзине!";
     console.log(message);
 
 
@@ -56,7 +56,7 @@ function addInCartSumChange(sum, delta) {
     // замените склеивание, используемое в newSum Text на шаблонную строку
     let newSum = oldSum + difference;
     let newSumText = newSum + ' ₽';
-    newSumText = '${newSum} ₽';
+    newSumText = `${newSum} ₽`;
 
     console.log (newSumText);
     
