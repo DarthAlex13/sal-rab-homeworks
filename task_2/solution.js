@@ -15,13 +15,12 @@ function calcShipping(sum, min, shipping) {
 
     // если productsSum больше 0 и меньше freeShippingMinSum,
     // то shippingSum присвоить значение shippingPrice
-    let shippingSum;
-    if (productsSum = 0); {
-    } else shippingSum = 0;
-    if (productsSum >= freeShippingMinSum); {
-    } else shippingSum = 0;
-    if ((productsSum >0) && (productsSum < freeShippingMinSum)); {else
-    } else shippingSum = shippingPrice;
+    let shippingSum
+    if (productsSum == 0 || productsSum >= freeShippingminSum){
+    shippingSum = 0
+    } else {
+    shippingSum = shippingPrice
+    }
     return shippingPrice;
 }
     // Конец решения задания №2.1.
