@@ -40,8 +40,11 @@ function calcDiscount(sum, min, discount) {
     // иначе присвойте discountSum значение 0
 
     // Конец решения задания №2.2.
-
-    return discountSum;
+    let discountSum;
+    if (productsSum >= discountMinSum)
+    { discountSum = productsSum / 100 * discountPart; }
+    else { discoountSum = 0; }
+    return discountPrice;
 }
 
 function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shippingPrice}) {
